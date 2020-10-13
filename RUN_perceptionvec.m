@@ -6,7 +6,7 @@ close all, clear
 %%% N = length(res);
 
 res = zeros(22,1);
-V = eye(22)
+V = eye(22);
 lambda = 1.2;
 res(1) = 630 - 150i;
 
