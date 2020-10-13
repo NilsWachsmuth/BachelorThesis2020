@@ -8,10 +8,10 @@ close all, clear
 res = zeros(22);
 V = eye(22);
 lambda = 1.2;
-res(1) = (630 - 1.1i*lambda);
+res(1) = (630 - 150i*lambda);
 
 for i = 2:22
-    res(i) = (630*lambda^(i) - 1.1i*(lambda^(i)));
+    res(i) = (630*lambda^(i) - 150i*(lambda^(i)));
 end
 
 
