@@ -5,12 +5,13 @@ close all, clear
 load('res22');  
 N = length(res);
 
-res = zeros(N);
-lambda = 2^(0.25);
-res(1) = (500 - 1i/lambda);
+res = zeros(20);
+V = eye(20);
+lambda = 1.2;
+res(1) = (630 - 1.1i*lambda);
 
-for i = 2:N
-    res(i) = (500*lambda^(i) - 1i/(lambda^(i)));
+for i = 2:20
+    res(i) = (630*lambda^(i) - 1.1i*(lambda^(i)));
 end
 
 
